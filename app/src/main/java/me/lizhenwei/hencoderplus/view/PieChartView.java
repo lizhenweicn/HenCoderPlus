@@ -1,4 +1,4 @@
-package me.lizhenwei.hencoderplus.utils;
+package me.lizhenwei.hencoderplus.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,6 +8,8 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import me.lizhenwei.hencoderplus.utils.Utils;
 
 /**
  * Name : PieChartView
