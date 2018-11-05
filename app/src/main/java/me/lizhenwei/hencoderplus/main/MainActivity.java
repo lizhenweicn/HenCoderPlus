@@ -1,7 +1,9 @@
-package me.lizhenwei.hencoderplus;
+package me.lizhenwei.hencoderplus.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import me.lizhenwei.hencoderplus.R;
 
 public class MainActivity extends AppCompatActivity {
 
