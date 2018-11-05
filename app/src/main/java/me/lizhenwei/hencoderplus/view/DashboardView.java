@@ -45,6 +45,11 @@ public class DashboardView extends View {
     private static final int DASH_COUNT = 20;
 
     /**
+     * 指针长度
+     */
+    private static final float POINTER_LENGTH = Utils.dp2px(100);
+
+    /**
      * 抗锯齿画笔
      */
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -110,11 +115,11 @@ public class DashboardView extends View {
         mPaint.setPathEffect(null);
 
         //  画指针
-//        canvas.drawLine(
-//                getWidth() / 2, getHeight() / 2,
-//                (float) Math.cos(Math.toRadians(getAngleFromDash(0))) * RADIUS,
-//                (float) Math.sin(Math.toRadians(getAngleFromDash(0))) * RADIUS,
-//                mPaint);
+        canvas.drawLine(
+                getWidth() / 2, getHeight() / 2,
+                (float) Math.cos(Math.toRadians(getAngleFromDash(0))) * POINTER_LENGTH + getWidth() / 2,
+                (float) Math.sin(Math.toRadians(getAngleFromDash(0))) * POINTER_LENGTH + getHeight() / 2,
+                mPaint);
     }
 
     /**
