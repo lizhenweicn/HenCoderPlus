@@ -81,10 +81,10 @@ public class AvatarView extends View {
     private Bitmap getAvatar(int width) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), R.drawable.dog, options);
+        BitmapFactory.decodeResource(getResources(), R.drawable.avatar, options);
         options.inJustDecodeBounds = false;
         options.inDensity = options.outWidth;
         options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(getResources(), R.drawable.dog, options);
+        return BitmapFactory.decodeResource(getResources(), R.drawable.avatar, options);
     }
 }
