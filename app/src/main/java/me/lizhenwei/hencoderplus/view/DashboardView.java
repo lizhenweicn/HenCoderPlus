@@ -124,6 +124,8 @@ public class DashboardView extends View {
 
     /**
      * 画圆弧
+     * <p>
+     * 切记这里根据刻度算出的指针终点坐标要加上圆心的相对位置
      */
     private void drawArcByCanvas(Canvas canvas) {
         canvas.drawArc(
