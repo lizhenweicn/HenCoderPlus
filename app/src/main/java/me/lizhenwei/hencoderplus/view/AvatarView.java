@@ -54,7 +54,7 @@ public class AvatarView extends View {
     }
 
     {
-        mBitmap = getAvatar(AVATAR_WIDTH);
+        mBitmap = Utils.getAvatar(getResources(), AVATAR_WIDTH);
     }
 
     @Override
@@ -78,13 +78,4 @@ public class AvatarView extends View {
         canvas.restoreToCount(saved);
     }
 
-    private Bitmap getAvatar(int width) {
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), R.drawable.avatar, options);
-        options.inJustDecodeBounds = false;
-        options.inDensity = options.outWidth;
-        options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(getResources(), R.drawable.avatar, options);
-    }
 }
