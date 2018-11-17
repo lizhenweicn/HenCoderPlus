@@ -34,4 +34,12 @@ public class Utils {
         return BitmapFactory.decodeResource(res, R.drawable.avatar, options);
     }
 
+    /**
+     * 适配 camera 的 Z 坐标轴
+     * @return  适配完后的坐标值
+     */
+    public static float getZForCamera() {
+        return -8 * Resources.getSystem().getDisplayMetrics().density;
+    }
+
 }
